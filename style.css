@@ -1,8 +1,26 @@
+body {
+    background-color: black;
+    text-align:center;
+    margin-top:100px;
+}
+
 .panel {
 
         height:100px;
         width:100px;
+        display: inline-block;
+        cursor:pointer;
+        
+}
 
+.panel:hover {
+    border:1px solid red;
+    box-shadow: inset 0px 0px 0px 3px cyan;
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: white;
 }
 
 .bottom-left-panel {
@@ -10,16 +28,16 @@
         background-color:red;
 }
 .bottom-right-panel {
-        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
         background-color:green;
     }
 
 .top-left-panel {
-        border-bottom-left-radius: 200px;
+        border-top-left-radius: 200px;
         background-color:blue;
          }
 
 .top-right-panel {
-        border-bottom-left-radius: 200px;
+        border-top-right-radius: 200px;
         background-color:yellow;
       }
