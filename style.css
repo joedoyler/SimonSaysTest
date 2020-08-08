@@ -1,0 +1,25 @@
+.panel {
+
+        height:100px;
+        width:100px;
+
+}
+
+.bottom-left-panel {
+        border-bottom-left-radius: 200px;
+        background-color:red;
+}
+.bottom-right-panel {
+        border-bottom-left-radius: 200px;
+        background-color:green;
+    }
+
+.top-left-panel {
+        border-bottom-left-radius: 200px;
+        background-color:blue;
+         }
+
+.top-right-panel {
+        border-bottom-left-radius: 200px;
+        background-color:yellow;
+      }
