@@ -1,22 +1,24 @@
-const topLeft = document.querySelector('.top-left-panel');
-const topRight = document.querySelector('.top-left-panel');
-const bottomRight = document.querySelector('.bottom-left-panel');
-const bottomLeft = document.querySelector('.bottom-left-panel');
+let order = [] ;
+let playerOrder = [];
+let flash;
+let turn;
+let good;
+let compTurn;
+let intervalID;
+let strict = false;
+let noise = true;
+let on = false;
+let win;
 
+const turnCounter = document.querySelector("#turn");
+const topLeft = document.querySelector("#topleft"); 
+const topRight = document.querySelector("#topright"); 
+const bottomLeft = document.querySelector("#bottomleft"); 
+const bottomRight = document.querySelector("#bottomright"); 
+const strictButton = document.querySelector("#strict"); 
+const onButton = document.querySelector("#on"); 
+const startButton = document.querySelector("#start"); 
 
-const getRandomPanel = () => {
-    const panels = [
-        topLeft,
-        topRight,
-        bottomLeft,
-        bottomRight
-    ];
-    return panels [parseInt(Math.random() * panels.length)];
-};
-
-const sequence = [
-    getRandomPanel,
-    getRandomPanel,
-    getRandomPanel,
-    getRandomPanel
-] ;
+strictButton.addEventListener( 'change', (event) => {
+    console.log("checked")
+})
